@@ -34,9 +34,12 @@
     .fa-coffee {
       font-size: 200px;
     }
+    tbody tr:nth-child(even), tbody thead tr th {
+      background-color: rgba(169, 177, 172, 0.685);
+    }
   </style>
   <body>
-    <!-- Navbar -->
+    <!-- Navbar Reg Screen -->
     <div class="w3-top">
       <div class="w3-bar w3-red w3-card w3-left-align w3-large">
         <a
@@ -52,12 +55,12 @@
         <a
           href="/link1"
           class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-          >Logistic Regression</a
+          >Model</a
         >
         <a
           href="/link2"
           class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-          >ML (Cam)</a
+          >Results</a
         >
         <a
           href="/viz"
@@ -67,7 +70,7 @@
         <a
           href="/team"
           class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-          >The Team</a
+          >Team</a
         >
       </div>
 
@@ -77,23 +80,21 @@
         class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"
       >
         <a href="/link1" class="w3-bar-item w3-button w3-padding-large"
-          >Logistic Regression</a
+          >Model</a
         >
         <a href="/link2" class="w3-bar-item w3-button w3-padding-large"
-          >ML (Cam)</a
+          >Results</a
         >
         <a href="/viz" class="w3-bar-item w3-button w3-padding-large"
           >Visualizations</a
         >
-        <a href="/team" class="w3-bar-item w3-button w3-padding-large"
-          >The Team</a
-        >
+        <a href="/team" class="w3-bar-item w3-button w3-padding-large">Team</a>
       </div>
     </div>
 
     <!-- Header -->
     <header class="w3-container w3-red w3-center" style="padding: 64px 16px">
-      <h1 class="w3-margin w3-jumbo">LOGISTIC REGRESSION</h1>
+      <h1 class="w3-margin w3-jumbo">MODELING LOGISTIC REGRESSION</h1>
       <p class="w3-xlarge">A ML Project by The Quad++</p>
     </header>
 
@@ -174,7 +175,7 @@
             jupyter notebook, we calculate F1 Score to see the efficiency of our
             model. For detailed explanation on F1 score, please click the link
             below: <br />
-            <a href="https://en.wikipedia.org/wiki/F-score">F1 Score</a>
+            <a href="https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9" target="_blank">F1 Score</a>
           </h6>
 
           <h6 class="w3-padding-16">Please see the F1 score table below:</h6>
