@@ -125,7 +125,17 @@
         <div class="w3-col">
           <h1>What is Random Forest Classification</h1>
           <h6 class="w3-padding-16">
-            https://williamkoehrsen.medium.com/random-forest-simple-explanation-377895a60d2d
+            Random forests or random decision forests are an ensemble learning method for classification, 
+            regression and other tasks that operate by constructing a multitude of decision trees at training time 
+            and outputting the class that is the mode of the classes (classification) or mean/average 
+            prediction (regression) of the individual trees. Random decision forests correct for decision trees' 
+            habit of overfitting to their training set.<br/><br/>
+
+            Random forest is a classic classification algorithm, which is why it was chosen for this analysis.
+          </h6>
+          <h6 class="w3-padding-16">
+            https://williamkoehrsen.medium.com/random-forest-simple-explanation-377895a60d2d <br/>
+            https://en.wikipedia.org/wiki/Random_forest
           </h6>
           <p style="text-align: center">
             <img
@@ -141,7 +151,19 @@
         <div class="w3-col">
           <h1>What is K-Nearest Neighbors</h1>
           <h6 class="w3-padding-16">
-            https://medium.com/machine-learning-101/k-nearest-neighbors-classifier-1c1ff404d265
+            The K-Nearest Neighbors algorithm is a non-parametric classification method first developed by Evelyn Fix 
+            and Joseph Hodges in 1951, and later expanded by Thomas Cover. It is used for classification and regression. 
+            In both cases, the input consists of the k closest training examples in data set.<br/><br/>
+
+            KNN is a lazy learning method, which means there is no explicit training phase before classification. Since the generalization
+            and/or abstraction of the data happens at classification the entire dataset must be kept in memory. Along with the computationally 
+            intense nature of the KNN algorithm, this makes the application to small datasets with a relatively low number of features very attractive.
+            
+          </h6>
+          <h6 class="w3-padding-16">
+            https://medium.com/machine-learning-101/k-nearest-neighbors-classifier-1c1ff404d265<br/>
+            https://towardsdatascience.com/introduction-to-k-nearest-neighbors-3b534bb11d26<br/>
+            https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
           </h6>
           <p style="text-align: center">
             <img
@@ -160,9 +182,8 @@
           A multi layer perceptron (MLP) is a class of feed forward artificial neural network. 
           MLP consists of at least three layers of nodes: an input layer, a hidden layer and an output layer. 
           Except for the input nodes, each node is a neuron that uses a nonlinear activation function. MLP 
-          utilizes a supervised learning technique called back propagation for training. (Wikipedia)
-        </h6>
-        <h6 class="w3-padding-16">
+          utilizes a supervised learning technique called back propagation for training. (Wikipedia) <br/><br/>
+
           The MLP classifier performs binary classification, which is our use case for this analysis. They are particulary good at solving
           problems stochastically. Since health information sampled from the population can be assumed to have a relatively random distribution
           this classifier was chosen. MLPs are especially susceptible to the scaling of your dataset, so we chose to normalize the features from
@@ -186,10 +207,27 @@
         <div class="w3-col">
           <h1>What is Gaussian Naive Bayes</h1>
           <h6 class="w3-padding-16">
-            Nothing
+            Naive Bayes classifiers are a family of simple "probabilistic classifiers" based on applying Bayes' 
+            theorem with strong (naïve) independence assumptions between the features. They are among the 
+            simplest Bayesian network models, but coupled with kernel density estimation, they can achieve 
+            higher accuracy levels.<br/><br/>
+
+            Naïve Bayes classifiers are highly scalable, requiring a number of parameters linear in the number of 
+            variables (features/predictors) in a learning problem. Maximum-likelihood training can be done by evaluating 
+            a closed-form expression, which takes linear time, rather than by expensive iterative approximation as 
+            used for many other types of classifiers.<br/><br/>
+
+            When dealing with continuous data, a typical assumption is that the continuous values associated with each 
+            class are distributed according to a normal (or Gaussian) distribution. Since the data in this analysis has both
+            continous and discrete features, the Gaussian Naive-Bayes classifier on scikit-learn was selected. The majority of 
+            features in this dataset are assumed to be distributed according to the normal distribution since there is a "healthy" 
+            range for most of the features which would be the mean, and the discrete features are automatically handled by the scikit-learn 
+            implementation.
           </h6>
           <h6 class="w3-padding-16">
-            https://iq.opengenus.org/gaussian-naive-bayes/
+            https://iq.opengenus.org/gaussian-naive-bayes/<br/>
+            https://en.wikipedia.org/wiki/Naive_Bayes_classifier<br/>
+
           </h6>
           <p style="text-align: center">
             <img
