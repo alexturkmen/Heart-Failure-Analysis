@@ -237,91 +237,12 @@
             />
           </p></div></div></div>
 
-          <!-- Why Models were Chosen | Section 2 -->
-          <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-            <div class="w3-content">
-          <h1>Why Logistic Regression</h1>
-          <h6 class="w3-padding-16">
-            We choose Logistic Regression as one of the models to fit our data,
-            because the Heart Failure Data we analyze is comprised of a mix of
-            categorical and numerical variables for input. It also yields one
-            categorical output, which has "0" or "1" for an answer. Therefore,
-            Logistic Regression seems to be a suitable model. Please see our
-            data below:
-          </h6>
 
-          <div class="col-md-10">
-            <div id="table-area" class="">
-              <table id="heart-table" class="table table-striped" style="border: 1px solid rgb(78, 77, 77); width: 1000px; text-align: center">
-                <thead>
-                  <tr>
-                    <th class="table-head">Age</th>
-                    <th class="table-head">Anaemia</th>
-                    <th class="table-head">Creatinine Phosphokinase</th>
-                    <th class="table-head">Diabetes</th>
-                    <th class="table-head">Ejection Fraction</th>
-                    <th class="table-head">High Blood Pressure</th>
-                    <th class="table-head">Platelets</th>
-                    <th class="table-head">Serum Creatinine</th>
-                    <th class="table-head">Serum Sodium</th>
-                    <th class="table-head">Sex</th>
-                    <th class="table-head">Smoking</th>
-                    <th class="table-head">Follow-Up Period</th>
-                    <th class="table-head">Death Event</th>
-                  </tr>
-                </thead>
-                <tbody class="heart-table"></tbody>
-              </table>
-            </div>
-          </div>
 
-          <h6 class="w3-padding-16">
-            There are approximately 300 rows in our dataset. Next step is to
-            build a model and then test it. First, we split our data set into
-            training and test data. Then we fit the training data into our
-            model. Secondly, we make predictions using the test data. Based on
-            the accuracy of these predictions, we calculate the efficiency of
-            our model.
-          </h6></div></div>
-
-          <!-- F1 Score | Section 3 -->
+          <!-- Sources -->
           <div class="w3-row-padding w3-padding-64 w3-container">
             <div class="w3-content">
-          <h1>Model F1 Score</h1>
-          <h6 class="w3-padding-16">
-            After fitting the data in our model using scikit-learn library in
-            jupyter notebook, we calculate F1 Score to see the efficiency of our
-            model. For detailed explanation on F1 score, please click the link
-            below: <br />
-            <a href="https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9" target="_blank">F1 Score</a>
-          </h6>
 
-          <h6 class="w3-padding-16">Please see the F1 score table below:</h6>
-
-          <div class="col-md-10">
-            <div id="table-area" class="">
-              <table id="f1-table" class="table table-striped" style="border: 1px solid rgb(78, 77, 77); width: 1000px; text-align: center">
-                <thead>
-                  <tr>
-                    <th class="table-head">Index</th>
-                    <th class="table-head">Precision</th>
-                    <th class="table-head">Recall</th>
-                    <th class="table-head">F1 Score</th>
-                    <th class="table-head">Support</th>
-                  </tr>
-                </thead>
-                <tbody class="f1-table"></tbody>
-              </table>
-            </div>
-          </div>
-
-          <h6 class="w3-padding-32">
-            Unfortunately, our model has a F1 Score of 0.78 for weighted average
-            which is not very strong. However, considering the total number of
-            rows in our dataset, it is not a bad score. If more data becomes
-            available in the future, there is a chance that this model will give
-            a better F1 Score.
-          </h6>
 
           <h6 class="w3-padding-32" style="font-style: italic">
             Sources: <br /><a href="https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148" target="_blank">
