@@ -137,36 +137,52 @@
       </div>
     </div>
 
-    <!-- Second Grid -->
-    <!-- <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-      <div class="w3-content">
-        <div class="w3-third w3-center">
-          <i class="fa fa-heart w3-padding-64 w3-text-red w3-margin-right"></i>
-        </div>
+          <!-- Why Models were Chosen | Section 2 -->
+          <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+            <div class="w3-content">
+          <h1>Heart Failure Prediction using Machine Learning</h1>
+          <h6 class="w3-padding-16">
+            We choose Logistic Regression as one of the models to fit our data,
+            because the Heart Failure Data we analyze is comprised of a mix of
+            categorical and numerical variables for input. It also yields one
+            categorical output, which has "0" or "1" for an answer. Therefore,
+            Logistic Regression seems to be a suitable model. Please see our
+            data below:
+          </h6>
 
-        <div class="w3-twothird">
-          <h1>Lorem Ipsum</h1>
-          <h5 class="w3-padding-32">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </h5>
+          <div class="col-md-10">
+            <div id="table-area" class="">
+              <table id="heart-table" class="table table-striped" style="border: 1px solid rgb(78, 77, 77); width: 1000px; text-align: center">
+                <thead>
+                  <tr>
+                    <th class="table-head">Age</th>
+                    <th class="table-head">Anaemia</th>
+                    <th class="table-head">Creatinine Phosphokinase</th>
+                    <th class="table-head">Diabetes</th>
+                    <th class="table-head">Ejection Fraction</th>
+                    <th class="table-head">High Blood Pressure</th>
+                    <th class="table-head">Platelets</th>
+                    <th class="table-head">Serum Creatinine</th>
+                    <th class="table-head">Serum Sodium</th>
+                    <th class="table-head">Sex</th>
+                    <th class="table-head">Smoking</th>
+                    <th class="table-head">Follow-Up Period</th>
+                    <th class="table-head">Death Event</th>
+                  </tr>
+                </thead>
+                <tbody class="heart-table"></tbody>
+              </table>
+            </div>
+          </div>
 
-          <p class="w3-text-grey">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-        </div>
-      </div>
-    </div> -->
+          <h6 class="w3-padding-16">
+            There are approximately 300 rows in our dataset. Next step is to
+            build a model and then test it. First, we split our data set into
+            training and test data. Then we fit the training data into our
+            model. Secondly, we make predictions using the test data. Based on
+            the accuracy of these predictions, we calculate the efficiency of
+            our model.
+          </h6></div></div>
 
     <!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
       <h1 class="w3-margin w3-xlarge">
