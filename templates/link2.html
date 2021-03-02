@@ -95,32 +95,44 @@
       <p class="w3-xlarge">A ML Project by The Quad++</p>
     </header>
 
-    <!-- First Grid -->
-    <div class="w3-row-padding w3-padding-64 w3-container">
-      <div class="w3-content">
-        <div class="w3">
-          <h1>Lorem Ipsum</h1>
-          <h5 class="w3-padding-32">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </h5>
+          <!-- F1 Score | Section 3 -->
+          <div class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+          <h1>Model F1 Score</h1>
+          <h6 class="w3-padding-16">
+            After fitting the data in our model using scikit-learn library in
+            jupyter notebook, we calculate F1 Score to see the efficiency of our
+            model. For detailed explanation on F1 score, please click the link
+            below: <br />
+            <a href="https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9" target="_blank">F1 Score</a>
+          </h6>
 
-          <p class="w3-text-grey">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-        </div>
-      </div>
-    </div>
+          <h6 class="w3-padding-16">Please see the F1 score table below:</h6>
+
+          <div class="col-md-10">
+            <div id="table-area" class="">
+              <table id="f1-table" class="table table-striped" style="border: 1px solid rgb(78, 77, 77); width: 1000px; text-align: center">
+                <thead>
+                  <tr>
+                    <th class="table-head">Index</th>
+                    <th class="table-head">Precision</th>
+                    <th class="table-head">Recall</th>
+                    <th class="table-head">F1 Score</th>
+                    <th class="table-head">Support</th>
+                  </tr>
+                </thead>
+                <tbody class="f1-table"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <h6 class="w3-padding-32">
+            Unfortunately, our model has a F1 Score of 0.78 for weighted average
+            which is not very strong. However, considering the total number of
+            rows in our dataset, it is not a bad score. If more data becomes
+            available in the future, there is a chance that this model will give
+            a better F1 Score.
+          </h6>
 
     <!-- Second Grid -->
     <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
