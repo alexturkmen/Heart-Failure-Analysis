@@ -63,43 +63,11 @@
   <!-- F1 Score | Section 3 -->
   <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
-      <h1>Model Selection</h1>
+      <h1>Model Selection and Results</h1>
       <h6 class="w3-padding-16">
         The machine learning models for this analysis were selected to explore a range of classification algorithms in
-        an effort to gauge which type would be most applicable for this type of problem. <br />
-      </h6>
-      <ul>
-        <li>Logistic Regression</li>
-        <ul>
-          <li>Why chosen</li>
-        </ul>
-        <li>Random Forest</li>
-        <ul>
-          <li>Why chosen</li>
-        </ul>
-        <li>K-Nearest Neighbor</li>
-        <ul>
-          <li>Why chosen</li>
-        </ul>
-        <li>Multilayer Perceptron</li>
-        <ul>
-          <li>Why chosen</li>
-        </ul>
-        <li>Gaussian Naive Bayes</li>
-        <ul>
-          <li>Why chosen</li>
-        </ul>
-      </ul>
+        an effort to gauge which type would be most applicable for this type of problem. <br><br>
 
-      <div class="col-md-10"></div>
-    </div>
-  </div>
-
-  <!-- F1 Score | Section 3 -->
-  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-      <h1>Model Scores</h1>
-      <h6 class="w3-padding-16">
         After fitting the data in our model using scikit-learn library in
         jupyter notebook, we calculate F1 Score to see the efficiency of our
         model. For detailed explanation on F1 score, please click the link
@@ -108,7 +76,84 @@
           Score</a>
       </h6>
 
-      <h6 class="w3-padding-16">Please see the F1 score table below:</h6>
+      <h2>All Feature Model Scores</h2>
+
+      <p>
+      <div class='tableauPlaceholder' id='viz1614730923837' style='position: relative'><noscript><a href='#'><img
+              alt=' '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Al&#47;AllFeatures&#47;AllFeatures&#47;1_rss.png'
+              style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='AllFeatures&#47;AllFeatures' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Al&#47;AllFeatures&#47;AllFeatures&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+        </object></div>
+      <script
+        type='text/javascript'>                    var divElement = document.getElementById('viz1614730923837'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </p>
+
+      <h2>Patient Known Feature Model Scores</h2>
+
+      <p>
+      <div class='tableauPlaceholder' id='viz1614730801302' style='position: relative'><noscript><a href='#'><img
+              alt=' '
+              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;Patient-KnownFeatures&#47;Patient-KnownFeatures&#47;1_rss.png'
+              style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Patient-KnownFeatures&#47;Patient-KnownFeatures' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image'
+            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pa&#47;Patient-KnownFeatures&#47;Patient-KnownFeatures&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+          <param name='filter' value='publish=yes' />
+        </object></div>
+      <script
+        type='text/javascript'>                    var divElement = document.getElementById('viz1614730801302'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </p>
+
+      <div class="col-md-10"></div>
+    </div>
+  </div>
+
+  <!-- F1 Score | Section 3 -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <h1>Sensitivity Studies</h1>
+      <h6 class="w3-padding-16">
+        Here we look at the little graphs. <br />
+      </h6>
+
+
+      <div class="col-md-10"></div>
+    </div>
+  </div>
+
+
+  <!-- F1 Score | Section 3 -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <h1>Model Scores</h1>
+
+
+      <!-- <h6 class="w3-padding-16">Please see the F1 score table below:</h6>
 
       <div class="col-md-10">
         <div id="table-area" class="">
@@ -126,7 +171,7 @@
             <tbody class="f1-table"></tbody>
           </table>
         </div>
-      </div>
+      </div> -->
 
       <h6 class="w3-padding-32">
         Unfortunately, our model has a F1 Score of 0.78 for weighted average
@@ -136,6 +181,8 @@
         a better F1 Score.
       </h6>
     </div>
+
+
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-center w3-opacity">
       <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the
