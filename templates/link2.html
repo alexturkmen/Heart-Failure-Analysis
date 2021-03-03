@@ -32,9 +32,9 @@
   }
 
 
-h2.headertekst {
-  text-align: center;
-}
+  h2.headertekst {
+    text-align: center;
+  }
 </style>
 
 <body>
@@ -70,15 +70,23 @@ h2.headertekst {
     <div class="w3-content">
       <h1>Model Selection and Results</h1>
       <h6 class="w3-padding-16">
-        The machine learning models for this analysis were selected to explore a range of classification algorithms in
-        an effort to gauge which type would be most applicable for this type of problem. <br><br>
+        The machine learning models for this analysis were selected to explore a range of classification algorithms to
+        gauge which type would be most applicable for this problem. The problem of predicting death based on various
+        health factors is a binary classification problem, so the classic models (i.e., Logistic Regression, K-Nearest
+        Neighbors, Random Forest) were chosen. Additionally, a Multilayer Perceptron Classifier and Gaussian Naïve Bayes
+        were selected to experiment with slightly fewer common algorithms. <br><br>
 
-        After fitting the data in our model using scikit-learn library in
-        jupyter notebook, we calculate F1 Score to see the efficiency of our
-        model. For detailed explanation on F1 score, please click the link
-        below: <br />
+        We used an 80/20 test/train split for all models. After fitting the models using scikit-learn libraries in
+        Jupyter Notebook, we calculated Precision, Recall, Accuracy, and F1-Score. We chose to use weighted-average for
+        Precision, Recall, and F1-Score as this was decided to be a better indicator of model performance. All scores
+        below are normalized to the max model score to clearly show the highest performing model for each metric.
+        <br /><br />
         <a href="https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9" target="_blank">F1
           Score</a>
+        <br />
+        <h6 class="w3-padding-16">
+          <b>All model scores listed below are relative to max performing model.</b> This was done because we were extremely limited with the size of our dataset, so we elected to not pursue creating a high performing model.
+        </h6>
       </h6>
 
       <h2>All Feature Model Scores</h2>
@@ -135,6 +143,14 @@ h2.headertekst {
       </p>
 
       <div class="col-md-10"></div>
+
+      <h6> <br />Due to the nature of what we are predicting, it was determined that a high recall value was the best
+        predictor
+        of performance. This is because you want the most correctly determined positive values since the outcome is
+        relating to life and death. Using this metric, Logistic Regression performs best if you have access to the
+        in-depth patient factors, while, surprisingly, the Multilayer Perceptron performs best if the patient only has
+        factors that they themselves are aware of.</h6>
+
     </div>
   </div>
 
@@ -146,28 +162,35 @@ h2.headertekst {
         <h2 class="headertekst">Here we look at the little graphs... </h2>
 
         <p style="text-align: center">
-          <img
-            src="/static/images/models/KNN_neighbors.png"
-            alt="KNN Neighbors"
-            style="width: 80%; padding-bottom: 20px"
-          />
+          <img src="/static/images/models/random_forest_sensitivity.png" alt="KNN Neighbors"
+            style="width: 80%; padding-bottom: 20px" />
+            <br /> <br />
 
+            This allowed us to quickly see that for random forests, increasing the number of estimators past approximately
+              60 did not improve model performance at all. Grabbing one of the peaks resulted in the number of estimators used
+              being 88. 
+              <br /> <br />
 
-          <img
-            src="/static/images/models/MLP_figure.png"
-            alt="MLP"
-            style="width: 80%; padding-bottom: 20px"
-          />
+          <img src="/static/images/models/KNN_neighbors.png" alt="MLP" style="width: 80%; padding-bottom: 20px" />
+          <br /> <br />
+          For K-Nearest Neighbors, 3 is clearly the best option with the added benefit of being one of the
+          shorter runtimes. 
+          <br /> <br />
+          
+          <img src="/static/images/models/MLP_figure.png" alt="Random Forest"
+            style="width: 80%; padding-bottom: 20px" />
+          <br /> <br />
+          Multilayer Perceptron was more challenge to extract value from the sensitivity study. We already know that the
+          model is extremely sensitive to data scaling, and individual runs with the same layer settings showed that max
+          value scaling was the best performer, so we did not iterate further than that. For layer settings, the
+          sensitivity analysis showed it was also extremely sensitive. It was even different between All Features and
+          Patient Known Features. It was eventually found that successively decreasing layer size tended to perform
+          better, and layer profiles of (16,8,4,4) and (16,4,4) were selected for All Features and Patient Known Features,
+          respectively.
 
-          <img
-            src="/static/images/models/random_forest_sensitivity.png"
-            alt="Random Forest"
-            style="width: 80%; padding-bottom: 20px"
-          />
         </p>
 
       </h6>
-
 
       <div class="col-md-10"></div>
     </div>
@@ -175,9 +198,9 @@ h2.headertekst {
 
 
   <!-- F1 Score | Section 3 -->
-  <div class="w3-row-padding w3-padding-64 w3-container">
+  <!-- <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
-      <h1>Model Scores</h1>
+      <h1>Model Scores</h1> -->
 
 
       <!-- <h6 class="w3-padding-16">Please see the F1 score table below:</h6>
@@ -200,14 +223,14 @@ h2.headertekst {
         </div>
       </div> -->
 
-      <h6 class="w3-padding-32">
+      <!-- <h6 class="w3-padding-32">
         Unfortunately, our model has a F1 Score of 0.78 for weighted average
         which is not very strong. However, considering the total number of
         rows in our dataset, it is not a bad score. If more data becomes
         available in the future, there is a chance that this model will give
         a better F1 Score.
       </h6>
-    </div>
+    </div> -->
 
 
     <!-- Footer -->
