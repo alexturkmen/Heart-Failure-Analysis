@@ -112,12 +112,12 @@
           </h5>
 
           <img
-              src="/static/images/homepage/image.png"
-              alt="Ida"
-              style="width: 125%; padding-bottom: 40px"
-            />
+            src="/static/images/homepage/image.png"
+            alt="Ida"
+            style="width: 125%; padding-bottom: 40px"
+          />
 
-            <h5 class="w3-padding-32">
+          <h5 class="w3-padding-32">
             With roughly 300 patients and about a dozen factors, we take the
             individuals and relate their data with the others. The first
             contributing factor is age. Our patients range from 40-95. Next, we
@@ -134,7 +134,7 @@
             counts ranging from 150,000-450,000 seem to be in a normal range.
             This count considers how well the blood can clot. The higher the
             count, the more clotting is observed.
-            </h5>
+          </h5>
         </div>
 
         <div class="w3-third w3-center">
@@ -143,48 +143,54 @@
       </div>
     </div>
 
-          <!-- Why Models were Chosen | Section 2 -->
-          <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-            <div class="w3-content">
-          <h1>Heart Failure Prediction using Machine Learning</h1>
-          <h6 class="w3-padding-16">
-Please see our
-            data below:
-          </h6>
+    <!-- Why Models were Chosen | Section 2 -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+      <div class="w3-content">
+        <h1>Heart Failure Prediction using Machine Learning</h1>
+        <h6 class="w3-padding-16">Please see our data below:</h6>
 
-          <div class="col-md-10">
-            <div id="table-area" class="">
-              <table id="heart-table" class="table table-striped" style="border: 1px solid rgb(78, 77, 77); width: 1000px; text-align: center">
-                <thead>
-                  <tr>
-                    <th class="table-head">Age</th>
-                    <th class="table-head">Anaemia</th>
-                    <th class="table-head">Creatinine Phosphokinase</th>
-                    <th class="table-head">Diabetes</th>
-                    <th class="table-head">Ejection Fraction</th>
-                    <th class="table-head">High Blood Pressure</th>
-                    <th class="table-head">Platelets</th>
-                    <th class="table-head">Serum Creatinine</th>
-                    <th class="table-head">Serum Sodium</th>
-                    <th class="table-head">Sex</th>
-                    <th class="table-head">Smoking</th>
-                    <th class="table-head">Follow-Up Period</th>
-                    <th class="table-head">Death Event</th>
-                  </tr>
-                </thead>
-                <tbody class="heart-table"></tbody>
-              </table>
-            </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table
+              id="heart-table"
+              class="table table-striped"
+              style="
+                border: 1px solid rgb(78, 77, 77);
+                width: 1000px;
+                text-align: center;
+              "
+            >
+              <thead>
+                <tr>
+                  <th class="table-head">Age</th>
+                  <th class="table-head">Anaemia</th>
+                  <th class="table-head">Creatinine Phosphokinase</th>
+                  <th class="table-head">Diabetes</th>
+                  <th class="table-head">Ejection Fraction</th>
+                  <th class="table-head">High Blood Pressure</th>
+                  <th class="table-head">Platelets</th>
+                  <th class="table-head">Serum Creatinine</th>
+                  <th class="table-head">Serum Sodium</th>
+                  <th class="table-head">Sex</th>
+                  <th class="table-head">Smoking</th>
+                  <th class="table-head">Follow-Up Period</th>
+                  <th class="table-head">Death Event</th>
+                </tr>
+              </thead>
+              <tbody class="heart-table"></tbody>
+            </table>
           </div>
+        </div>
 
-          <h6 class="w3-padding-16">
-            There are approximately 300 rows in our dataset. Next step is to
-            build a model and then test it. First, we split our data set into
-            training and test data. Then we fit the training data into our
-            model. Secondly, we make predictions using the test data. Based on
-            the accuracy of these predictions, we calculate the efficiency of
-            our model.
-          </h6></div></div>
+        <h6 class="w3-padding-16">
+          There are approximately 300 rows in our dataset. Next step is to build
+          a model and then test it. First, we split our data set into training
+          and test data. Then we fit the training data into our model. Secondly,
+          we make predictions using the test data. Based on the accuracy of
+          these predictions, we calculate the efficiency of our model.
+        </h6>
+      </div>
+    </div>
 
     <!-- <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
       <h1 class="w3-margin w3-xlarge">
@@ -222,5 +228,7 @@ Please see our
         }
       }
     </script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
   </body>
 </html>
